@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import "./style.css";
 
-function Increment() {
-  const [state, setState] = useState(0);
+class Theme extends React.Component {
+  state = {
+    theme: "light",
+  };
 
-  const increase = () => setState(state + 1);
+  toDark = () => this.setState({ theme: "dark" });
+  toLight = () => this.setState({ theme: "light" });
 
-  return (
-    <div>
-      <button onClick={increase}>Click Me</button>
-      <p>I'm increasing: {state}</p>
-    </div>
-  );
+  render() {
+    const { theme } = this.state;
+
+    return (
+      <div className={theme}>
+        {theme === "light" ? (
+          <button onClick={this.toDark}>Light</button>
+        ) : (
+          <button onClick={this.toLight}>Dark</button>
+        )}
+      </div>
+    )
+  };
 }
 
-ReactDOM.render(<Increment />, document.getElementById("root"));
+ReactDOM.render(<Theme />, document.getElementById("root"));
