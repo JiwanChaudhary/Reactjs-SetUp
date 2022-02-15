@@ -13,8 +13,12 @@ body,
 }
 
 .dark {
-  /* color: #fff; */
-  background: red;
+  background: #000;
+}
+
+.dark button{
+  color: #fff;
+  background: #000;
 }
 
 button {
