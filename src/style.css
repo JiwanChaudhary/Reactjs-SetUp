@@ -8,13 +8,6 @@ body,
   margin: 0;
 }
 
-.light {
-  background: #fff;
-}
-
-.dark {
-  background: red;
-}
 
 .dark button{
   color: #fff;
