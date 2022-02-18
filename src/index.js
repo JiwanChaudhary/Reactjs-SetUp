@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
+import Test from "./Test";
 
 function Theme() {
   const [theme, setTheme] = React.useState("light");
@@ -16,6 +17,7 @@ function Theme() {
         ) : (
           <button onClick={toLight}>Dark</button>
         )}
+        <Test />
       </div>
     );
 }
