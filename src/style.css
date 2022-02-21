@@ -1,20 +1,31 @@
-html,
-body,
-#root,
-.light,
-.dark {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+.pokemon-info-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
+.pokemon-info-app .pokemon-form label {
+  display: block;
+  text-align: center;
+}
 
-.dark button{
+.pokemon-form small button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.pokemon-info-app .input-submit button {
+  background-color: rgb(204, 8, 8);
+  margin-left: 10px;
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
   color: #fff;
-  background: #000;
 }
 
-button {
-  font-size: 80px;
-  background: transparent;
+.pokemon-info-app .input-submit input {
+  padding: 4px;
 }
