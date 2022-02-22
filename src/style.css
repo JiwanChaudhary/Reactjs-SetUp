@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  max-width: 100%;
 }
 
 .pokemon-info-app .pokemon-form label {
@@ -18,8 +19,8 @@
 
 .pokemon-info-app .input-submit button {
   background-color: rgb(204, 8, 8);
-  margin-left: 10px;
-  padding: 6px 10px;
+  margin-left: 7px;
+  padding: 7px 10px;
   outline: none;
   border: none;
   border-radius: 3px;
@@ -28,4 +29,16 @@
 
 .pokemon-info-app .input-submit input {
   padding: 4px;
+}
+
+.input-submit {
+  margin-top: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+label {
+  font-size: 20px;
 }
